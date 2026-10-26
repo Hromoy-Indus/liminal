@@ -1,0 +1,41 @@
+/* The finale exists after the approved research sequence, on the same stage. */
+.night-finale{position:absolute;inset:0;z-index:18;visibility:hidden;background:#000;color:#e5e2d6;overflow:hidden;perspective:1300px;pointer-events:none}
+.night-viewport{position:absolute;inset:0;overflow:hidden;clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+.night-rig{position:absolute;inset:0;transform-origin:72% 50%}
+.night-photo,.night-ground{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.night-ground{transform-origin:72% 50%;mask-image:linear-gradient(transparent 43%,#000 68%);-webkit-mask-image:linear-gradient(transparent 43%,#000 68%)}
+.night-mist{position:absolute;inset:-20%;background:radial-gradient(ellipse at 64% 52%,#a4937dcc 0,#8d817155 23%,#1b1a1900 57%);opacity:0;transform-origin:64% 52%;pointer-events:none}
+.night-shore{position:absolute;inset:0;background:linear-gradient(180deg,#151715b8,transparent 37%),linear-gradient(90deg,#151715e8,transparent 43%);opacity:0;pointer-events:none}
+.night-casing{position:absolute;inset:0;transform-style:preserve-3d;perspective:1300px;pointer-events:none}
+.casing-panel{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 65%;backface-visibility:hidden;transform-origin:50% 50%}
+.casing-left{clip-path:polygon(0% 23%,23% 24%,37% 30%,44% 42%,48% 47%,52% 47%,54% 68%,60% 100%,0% 100%)}.casing-right{clip-path:polygon(100% 23%,77% 24%,63% 30%,56% 42%,52% 47%,54% 68%,60% 100%,100% 100%)}.casing-roof{clip-path:polygon(0% 0%,100% 0%,100% 23%,77% 24%,63% 30%,56% 42%,52% 47%,48% 47%,44% 42%,37% 30%,23% 24%,0% 23%)}
+.night-premise{position:absolute;inset:0;visibility:hidden;margin:0;perspective:1000px}
+.night-premise .premise-small{position:absolute;left:7%;top:13%;width:31%;max-width:470px;font-size:clamp(22px,2.2vw,34px);line-height:1.2;letter-spacing:-.035em}
+.night-premise .premise-between{position:absolute;left:12%;top:51%;font-size:clamp(100px,15vw,230px);font-weight:500;line-height:.83;letter-spacing:-.08em;transform-origin:left center}
+.night-premise .premise-end{position:absolute;left:17%;top:78%;font-size:clamp(23px,2.8vw,44px);line-height:1;letter-spacing:-.045em}
+.night-delay{position:absolute;inset:0;visibility:hidden;margin:0}
+.night-delay .delay-start{position:absolute;left:7%;top:14%;font-size:clamp(25px,3vw,48px);letter-spacing:-.045em;width:36%;line-height:1.08}
+.night-delay .delay-word{position:absolute;left:-4%;top:39%;font-size:clamp(110px,23vw,360px);line-height:.8;letter-spacing:-.09em;font-weight:500;transform-origin:72% 50%;white-space:nowrap}
+.night-delay .delay-end{position:absolute;right:8%;bottom:15%;font-size:clamp(25px,3vw,48px);letter-spacing:-.045em;line-height:1.08;width:31%}
+.night-question{position:absolute;left:8%;top:13%;width:84%;margin:0;visibility:hidden;font-size:clamp(40px,5.6vw,88px);line-height:1.02;letter-spacing:-.055em;font-weight:400}
+.night-question>span{display:block}.night-question .question-offset{margin-left:16vw}.night-question .question-life{margin-left:27vw;max-width:700px}
+.night-question .question-now{display:inline;white-space:nowrap}
+.night-static-photo{display:none}
+#sources{background:#171816;color:#c5c8bc;max-width:none;padding:70px 8vw 90px;display:grid;grid-template-columns:1fr 1fr;gap:24px 7vw;font-size:14px;line-height:1.6}
+#sources h2{grid-column:1/-1;margin:0 0 25px;font-size:clamp(32px,4vw,58px);line-height:1;letter-spacing:-.045em;font-weight:400;color:#e5e2d6}
+#sources p{margin:0;max-width:72ch}#sources p:last-child{grid-column:1/-1;margin-top:25px}#sources a{text-decoration-thickness:1px}
+@media(max-width:700px){
+.night-finale{perspective:900px}.night-photo,.night-ground{object-position:80% 50%}.night-rig,.night-ground{transform-origin:62% 50%}.night-mist{background:radial-gradient(ellipse at 62% 48%,#a4937ddd 0,#8d817166 25%,#1b1a1900 63%)}
+.night-premise .premise-small{left:7%;top:12%;width:79%;font-size:23px;line-height:1.25}.night-premise .premise-between{left:4%;top:52%;font-size:25vw}.night-premise .premise-end{left:12%;top:70%;width:70%;font-size:28px;line-height:1.1}
+.night-delay .delay-start{left:7%;top:14%;width:80%;font-size:30px}.night-delay .delay-word{left:-7%;top:45%;font-size:37vw}.night-delay .delay-end{right:8%;bottom:18%;width:65%;font-size:30px}
+.night-question{left:7%;top:14%;width:86%;font-size:10.7vw;line-height:1.08}.night-question .question-offset{margin-left:5vw}.night-question .question-life{margin-left:13vw;max-width:100%}.night-question .question-now{white-space:normal}
+#sources{display:block;padding:55px 7vw 70px}#sources h2{font-size:36px;margin-bottom:40px}#sources p{margin:0 0 25px}
+}
+body:not(.animated) .night-finale{position:relative;visibility:visible;order:12;pointer-events:auto;padding:65px 7vw 90px;overflow:hidden}
+body:not(.animated) .night-viewport,body:not(.animated) .night-casing{display:none}
+body:not(.animated) .night-static-photo{display:block;width:100%;height:auto;margin:0 0 50px}
+body:not(.animated) .night-premise,body:not(.animated) .night-delay,body:not(.animated) .night-question{position:relative;inset:auto;visibility:visible;width:100%;margin:40px 0;max-width:1000px}
+body:not(.animated) .night-premise span,body:not(.animated) .night-delay span{position:static;display:inline;font-size:clamp(25px,4vw,54px);font-weight:400;line-height:1.2;letter-spacing:-.04em;white-space:normal}
+body:not(.animated) .night-question{font-size:clamp(34px,6vw,80px)}body:not(.animated) .night-question span{margin-left:0}
+
+.night-readable{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap!important}

@@ -1,0 +1,36 @@
+/* The approved scene is untouched; these surfaces exist only after its last hold. */
+.exit-wall{position:absolute;left:500px;top:250px;width:1100px;height:500px;transform:translateZ(-1100px);transform-style:preserve-3d;background:#bfb571 url(assets/wall-main.png?v=923201d7561d) 0 0/1100px 500px;visibility:hidden;backface-visibility:hidden}
+.tape-outline{position:absolute;left:460px;top:134px;width:190px;height:350px;transform:translateZ(.4px)}
+.tape{position:absolute;display:block;background:#24589f;box-shadow:inset 2px 0 #5081b366,inset -2px 0 #173e7766;clip-path:polygon(2% 0,95% 1%,100% 98%,4% 100%,0 56%)}
+.tape-left,.tape-right{width:13px;height:100%;top:0}.tape-left{left:0;transform:rotate(.5deg)}.tape-right{right:0;transform:rotate(-.4deg)}.tape-top,.tape-bottom{left:-3px;width:calc(100% + 8px);height:13px}.tape-top{top:-3px;transform:rotate(-1deg)}.tape-bottom{bottom:0;transform:rotate(.6deg)}
+.real-space{position:absolute;inset:0;visibility:hidden;overflow:hidden;background:#292b27}
+.parking-view{position:absolute;inset:-5%;transform-origin:43% 54%}
+.parking-view img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:43% 50%;pointer-events:none}
+.parking-copy,.parking-pause{position:absolute;inset:0;visibility:hidden;pointer-events:none}
+.parking-scene-title{position:absolute;left:5.5vw;top:9vh;margin:0;font-size:clamp(75px,11vw,180px);font-weight:400;letter-spacing:-.075em;line-height:.82;color:#ecece0;text-shadow:0 2px 14px #171b1722}
+.parking-scene-title span{display:block}.parking-scene-title span+span{margin-left:15vw;white-space:nowrap}
+.parking-reading{position:absolute;right:5.5vw;bottom:8vh;width:clamp(300px,31vw,460px);padding:26px 30px;background:#e1e2d7;color:#222721;font-size:clamp(19px,1.6vw,24px);line-height:1.36;letter-spacing:-.025em}
+.parking-reading p{margin:0}.parking-reading p+p{margin-top:1em}
+.parking-pause{inset:auto 0 0;min-height:28vh;padding:5vh 6vw;background:#171d19;color:#e5e6d9;display:grid;grid-template-columns:1fr 1fr;gap:13vw;font-size:clamp(21px,2.1vw,31px);line-height:1.22;letter-spacing:-.03em}
+.parking-pause p{margin:0;max-width:580px}.parking-pause p:first-child{max-width:440px}
+@media(max-width:700px){.parking-view{inset:-3% -45%;transform-origin:44% 55%}.parking-scene-title{left:7vw;top:8vh;font-size:17vw;line-height:.9}.parking-scene-title span+span{margin-left:8vw}.parking-reading{right:7vw;left:7vw;width:auto;bottom:7vh;padding:21px 24px;font-size:19px}.parking-pause{padding:28px 7vw 34px;display:block;font-size:22px;min-height:0}.parking-pause p+p{margin-top:1em}}
+body:not(.animated) .exit-wall{display:none}
+body:not(.animated) .real-space{position:relative;visibility:visible;height:72svh;min-height:450px;margin-top:0}
+body:not(.animated) .parking-copy,body:not(.animated) .parking-pause{position:relative;visibility:visible;transform:none!important;pointer-events:auto}
+body:not(.animated) .parking-copy{background:#e1e2d7;color:#222721;padding:50px 7vw}
+body:not(.animated) .parking-scene-title,body:not(.animated) .parking-reading{position:relative;inset:auto;width:auto;max-width:720px;padding:0;transform:none!important}
+body:not(.animated) .parking-scene-title{font-size:clamp(55px,11vw,140px);color:#222721;margin-bottom:45px}
+body:not(.animated) .parking-scene-title span+span{margin-left:0;white-space:normal}
+
+.parking-scene-title{visibility:hidden;left:16%;top:59%;font-size:clamp(90px,10vw,165px);line-height:.85;text-shadow:none;transform-origin:25% 100%}
+.parking-scene-title span:first-child{font-size:.25em;letter-spacing:-.035em;line-height:1.4;margin-left:.12em}.parking-scene-title span+span{margin-left:0;white-space:nowrap}
+.parking-column-near{transform-origin:37% 58%}.parking-column-left{transform-origin:14% 58%}
+@media(max-width:700px){.parking-scene-title{left:21%;top:50%;font-size:27vw}.parking-scene-title span+span{margin-left:0}.parking-reading{bottom:5vh;font-size:18px;padding:20px 22px}}
+body:not(.animated) .parking-scene-title{display:none}
+@media(max-width:700px){.parking-scene-title{left:34.5%}}
+body:not(.animated) .stage{display:flex;flex-direction:column}
+body:not(.animated) .real-space{order:10;flex:none}
+body:not(.animated) .parking-copy{order:11}
+body:not(.animated) .parking-pause{order:12}
+.wall-cut-edge{position:absolute;left:0;top:0;width:8px;height:100%;visibility:hidden;transform-origin:0 0;background:#d7d0b8;border-left:2px solid #8c8670;border-right:1px solid #a99d6d;pointer-events:none}
+body:not(.animated) .wall-cut-edge{display:none}

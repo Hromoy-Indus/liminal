@@ -1,0 +1,49 @@
+/* Continuation only. The approved terminal/device/game choreography is unchanged. */
+.room-material{visibility:hidden;position:absolute;inset:0;transform:translateY(100%);pointer-events:none;will-change:transform}
+/* Light, grain and skirting are baked once. No live gradient/filter paint pass. */
+.wall-material{background:url(assets/wall-main.png?v=923201d7561d) 0 0/100% 100% no-repeat}
+.level-left .wall-material,.level-return .wall-material,.level-slice .wall-material{background-image:url(assets/wall-side.png?v=923201d7561d)}
+.floor-material{background:url(assets/floor-lit.png?v=923201d7561d) 0 0/100% 100% no-repeat}
+.new-architecture{visibility:hidden;position:absolute;transform-style:preserve-3d;pointer-events:none}
+.ceiling-plane{left:-900px;top:250px;width:3200px;height:2300px;transform-origin:50% 0;transform:rotateX(-86deg) translateZ(-80px)}
+.ceiling-face{position:absolute;left:0;right:0;top:-400px;bottom:0;background:url(assets/ceiling.png?v=923201d7561d) 0 0/640px 640px;border:3px solid #777765}
+.repeat-space{inset:0}
+.echo-room{position:absolute;left:520px;top:250px;width:850px;height:500px;transform-style:preserve-3d;transform-origin:50% 50%;will-change:transform}
+.echo-one{transform:translateZ(-370px)}.echo-two{transform:translateZ(-740px)}.echo-three{transform:translateZ(-1110px)}.echo-four{transform:translateZ(-1480px)}
+.echo-frame{position:absolute;inset:0;background:url(assets/wall-depth-one.png?v=923201d7561d) 0 0/100% 100% no-repeat;clip-path:polygon(0 0,100% 0,100% 100%,83% 100%,83% 25%,47% 25%,47% 100%,0 100%)}
+.echo-two .echo-frame{background-image:url(assets/wall-depth-two.png?v=923201d7561d)}.echo-three .echo-frame{background-image:url(assets/wall-depth-three.png?v=923201d7561d)}.echo-four .echo-frame{background-image:url(assets/wall-depth-four.png?v=923201d7561d)}
+.echo-side{position:absolute;inset:0;background:url(assets/wall-side.png?v=923201d7561d) 0 0/100% 100% no-repeat;transform:rotateY(90deg);transform-origin:0 50%}
+.far-surface{position:absolute;left:500px;top:250px;width:1100px;height:500px;transform:translateZ(-1920px);background:#615536}
+.far-opening{position:absolute;left:62%;top:25%;bottom:0;width:17%;background:#24241b;border-left:5px solid #84754a}
+.route-word{position:absolute;left:8%;top:12%;font-size:74px;line-height:1;letter-spacing:-.065em;color:#efe7b7;visibility:hidden;transform:translateZ(3px)}
+.echo-two .route-word{top:45%;font-size:96px}.echo-three .route-word{top:21%;font-size:125px}.echo-four .route-word{top:52%;font-size:155px}
+.perspective{z-index:1}.passage-copy{z-index:2}.scroll-cue{z-index:3}
+.room-reading{position:absolute;z-index:4;visibility:hidden;will-change:transform;font-size:clamp(21px,1.75vw,28px);line-height:1.4;letter-spacing:-.025em;color:#2c2b1c}
+.room-reading p{margin:0 0 1.4em}.room-reading p:last-child{margin-bottom:0}
+.backrooms-reading{left:0;top:0;width:39vw;max-width:590px;height:100%;padding:10vh 5.5vw;background:#ded4a1;display:flex;flex-direction:column;justify-content:center;transform:translateX(-110vw);clip-path:polygon(0 0,100% 0,100% 87%,91% 87%,91% 100%,0 100%)}
+.repetition-reading{left:0;bottom:0;width:100%;padding:4vh 7vw;min-height:25vh;display:grid;grid-template-columns:1.2fr 1fr;gap:9vw;background:#27291c;color:#e8e1bd;transform:translateY(110vh);align-items:center}
+.repetition-reading p{font-size:clamp(24px,2.5vw,38px);line-height:1.16;letter-spacing:-.04em;max-width:620px;margin:0}
+.ending-phrase{position:absolute;z-index:4;bottom:0;left:0;width:100%;margin:0;padding:4vh 7vw 5vh;background:#27291c;color:#e8e1bd;visibility:hidden;transform:translateY(110vh);font-size:clamp(30px,3vw,46px);line-height:1.12;letter-spacing:-.04em}
+.ending-phrase span{display:block}.ending-phrase span:last-child{margin-left:18vw}
+.static-continuation{display:none}
+body:not(.animated) .room-reading,body:not(.animated) .ending-phrase{position:relative;transform:none!important;visibility:visible!important;left:auto;top:auto;bottom:auto;width:100%;max-width:none;height:auto;padding:45px 7vw;clip-path:none;display:block;font-size:21px}
+body:not(.animated) .repetition-reading p{font-size:26px;margin:0 0 1em}
+body:not(.animated) .static-continuation{display:block;min-height:260px;background:url(assets/wall-main.png?v=923201d7561d) center/cover}
+@media(max-width:700px){
+ .room-reading{font-size:20px;line-height:1.4}
+ .backrooms-reading{top:0;left:0;max-width:none;width:100%;height:auto;padding:34px 7vw 38px;clip-path:polygon(0 0,100% 0,100% 96%,91% 96%,91% 100%,0 100%)}
+ .repetition-reading{display:block;padding:25px 7vw;min-height:0;gap:0}.repetition-reading p{font-size:27px;margin:0 0 .7em}.repetition-reading p:last-child{margin-bottom:0}
+ .ending-phrase{padding:28px 7vw 36px;font-size:29px}.ending-phrase span:last-child{margin-left:0}
+}
+@media(max-width:360px){.room-reading{font-size:18px}.backrooms-reading{padding-top:24px;padding-bottom:28px}.repetition-reading p,.ending-phrase{font-size:25px}}
+
+/* Full room envelope, enabled by the existing material transition at time 9 only. */
+.backrooms-floor{left:-900px;top:750px;width:3200px;height:2500px;transform-origin:50% 0;transform:rotateX(90deg) translateY(-2100px)}
+.backrooms-floor-face{position:absolute;inset:0;background:url(assets/floor-lit.png?v=923201d7561d) 0 0/100% 100% no-repeat}
+
+.room-envelope{inset:0}
+.envelope-back-wall,.envelope-side-wall{position:absolute;top:250px;height:500px;background:url(assets/wall-side.png?v=923201d7561d) 0 0/850px 500px repeat-x}
+.envelope-back-wall{left:-900px;width:3200px;transform:translateZ(-2100px)}
+.envelope-side-wall{width:2500px;transform-origin:0 50%;transform:rotateY(90deg) translateX(-400px)}
+.envelope-left{left:-900px}.envelope-right{left:2300px}
+@media(max-width:700px){.backrooms-floor{height:3400px}}

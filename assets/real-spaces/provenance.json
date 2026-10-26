@@ -1,0 +1,81 @@
+{
+  "created": "2026-10-24",
+  "generatedImages": false,
+  "images": [
+    {
+      "name": "Berlin ZOB pedestrian underpass",
+      "author": "Fridolin freudenfett",
+      "date": "2018-01-20",
+      "source": "https://commons.wikimedia.org/wiki/File:Unterf%C3%BChrung_ZOB_Aufgang_Neue_Kantstra%C3%9Fe.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "original": "berlin-original.jpg",
+      "derivatives": [
+        "berlin.webp"
+      ],
+      "changes": "Resized to 2300px width, converted to WebP. Runtime photographic slices, cropping and reversible perspective transformations. Derivative image remains CC BY-SA 4.0."
+    },
+    {
+      "name": "Solihull station waiting room",
+      "author": "Elliott Brown",
+      "date": "2010-06-05",
+      "source": "https://commons.wikimedia.org/wiki/File:Solihull_Station_-_waiting_room_(4672360431).jpg",
+      "originalSource": "https://www.flickr.com/photos/ell-r-brown/4672360431",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "original": "solihull-original.jpg",
+      "derivatives": [
+        "solihull.webp",
+        "bench.webp"
+      ],
+      "changes": "Resized, converted to WebP; bench.webp cropped at x0 y1850 w2736 h1200 before resize. No generated content or retouching."
+    },
+    {
+      "name": "Pedestrian subway below Modane station, northward view",
+      "author": "Florian Pépellin",
+      "date": "2026-08-23",
+      "source": "https://commons.wikimedia.org/wiki/File:Souterrain_sous_la_gare_de_Modane_c%C3%B4t%C3%A9_nord_(ao%C3%BBt_2026).JPG",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/5/52/Souterrain_sous_la_gare_de_Modane_c%C3%B4t%C3%A9_nord_%28ao%C3%BBt_2026%29.JPG",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "original": "modane-original.jpg",
+      "derivatives": [
+        "modane-strip.webp"
+      ],
+      "changes": "Crop x0 y500 w3112 h1000, resize to width2200, WebP quality87. Runtime responsive crop. Derivative remains CC BY-SA4.0."
+    }
+  ],
+  "files": {
+    "berlin.webp": {
+      "bytes": 888544,
+      "sha256": "b80235a295122beb754684ff263a8db17289795ac7c3679e3a86c10dfe967a9c"
+    },
+    "berlin-original.jpg": {
+      "bytes": 6488682,
+      "sha256": "f4dc0d6e2dcb445286c83f5fb2a0e3a200e2d38198c4a51b1b01e915eb309b28"
+    },
+    "solihull-original.jpg": {
+      "bytes": 2536377,
+      "sha256": "cff5f169a06fb6d6654e653a736b9b084833f786211d234df4c055e5a90dced1"
+    },
+    "solihull.webp": {
+      "bytes": 192336,
+      "sha256": "8711d3f99b289e97e9550bd1be4963515da6bb364917a3aa3e42709669a9636a"
+    },
+    "bench.webp": {
+      "bytes": 173946,
+      "sha256": "d328ec4b03a61853147e064b95f65ac559e25dd650741964584c138cfa86d44e"
+    },
+    "modane-original.jpg": {
+      "bytes": 4153397,
+      "sha256": "be9952674a51896c52de94d1dc2e6784c451ccf4dc4d7538cb1531f82a926bfa"
+    },
+    "modane-strip.webp": {
+      "bytes": 340192,
+      "sha256": "a714d29c36f0550834542910bf4dc4d3a5bc2ad94b8a36dfd7de130665ca6112"
+    }
+  },
+  "unusedDerivatives": [
+    "bench.webp"
+  ]
+}

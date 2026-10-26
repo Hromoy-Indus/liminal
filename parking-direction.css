@@ -1,0 +1,49 @@
+/* Photographic choreography only. The wall and every preceding scene retain their styles. */
+.real-space{background:#292b27}
+.parking-view{inset:0;overflow:hidden;transform-origin:50% 56%}
+.garage-rig{position:absolute;width:max(100%,177.777svh);height:100%;left:calc((100% - max(100%,177.777svh))/2);top:0;transform-origin:50% 55%}
+.parking-view .garage-rig img{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;object-position:50% 50%}
+.garage-floor-word,.garage-way-out{position:absolute;white-space:nowrap;margin:0;font-weight:400;line-height:.82;letter-spacing:-.075em;visibility:hidden;pointer-events:none}
+.garage-floor-word{left:31%;top:66%;font-size:clamp(160px,19vw,300px);color:#252d27;transform:perspective(800px) rotateX(49deg) rotateZ(-4deg);transform-origin:50% 100%}
+.garage-way-out{left:34%;top:45%;font-size:clamp(180px,24vw,370px);color:#e9eadb;transform-origin:45% 100%}
+.garage-near-left{transform-origin:9% 66%}.garage-near-right{transform-origin:91% 66%}.garage-mid-left{transform-origin:30% 60%}.garage-mid-right{transform-origin:70% 60%}
+.garage-editorial{position:absolute;inset:0;visibility:hidden;color:#23332b;background:#dde0d2}
+.garage-editorial h1{position:absolute;left:-1.5vw;top:-4vh;font-size:24vw;letter-spacing:-.085em;font-weight:400;line-height:.88;margin:0}
+.garage-reading{position:absolute;left:6vw;top:76%;width:32vw;max-width:490px;font-size:clamp(19px,1.65vw,25px);line-height:1.3;letter-spacing:-.025em}
+.garage-reading p{margin:0}.garage-points{position:absolute;left:63%;top:75%;font-size:6vw;line-height:.85;letter-spacing:-.06em;margin:0}
+.garage-detail{position:absolute;left:73%;top:-15%;width:27%;height:49%;object-fit:cover;object-position:53% 50%;visibility:hidden;transform:rotate(12deg);pointer-events:none}
+.garage-action-reading{position:absolute;left:6vw;top:75%;width:33vw;max-width:540px;margin:0;visibility:hidden;color:#f1f2e7;font-size:clamp(24px,2.6vw,40px);line-height:1.1;letter-spacing:-.04em;pointer-events:none}
+.garage-reflection{position:absolute;left:7vw;top:16vh;width:65vw;max-width:1000px;color:#23332b;visibility:hidden;font-size:clamp(31px,4.1vw,64px);line-height:1.08;letter-spacing:-.05em;pointer-events:none}
+.garage-reflection p{margin:0 0 1.1em}.garage-reflection p+p{max-width:880px;font-size:.56em;line-height:1.28;letter-spacing:-.025em}
+@media(max-width:700px){
+ .parking-view{inset:0}.garage-rig{left:-4vw}
+ .garage-floor-word{font-size:40vw;left:15%;top:64%}.garage-way-out{font-size:52vw;left:35%;top:49%}
+ .garage-editorial h1{font-size:30vw;left:-2vw;top:10vh}
+ .garage-reading{left:7vw;top:67%;width:86vw;font-size:19px;line-height:1.35}
+ .garage-points{left:7vw;top:83%;font-size:12vw;line-height:.88}.garage-points br{display:none}
+ .garage-detail{left:76%;top:-7%;width:31%;height:38%}
+ .garage-action-reading{left:7vw;top:auto;bottom:7vh;width:80vw;font-size:26px;padding:18px 20px;background:#202a23}
+ .garage-reflection{left:7vw;top:13vh;width:67vw;font-size:35px}.garage-reflection p+p{font-size:20px;line-height:1.32}
+}
+body:not(.animated) .real-space{order:10;height:auto;min-height:0;background:#dde0d2;color:#23332b;padding-bottom:50px}
+body:not(.animated) .parking-view{position:relative;inset:auto;height:65svh;min-height:390px;transform:none!important;clip-path:none!important}
+body:not(.animated) .garage-rig{width:100%;left:0;transform:none!important}
+body:not(.animated) .garage-rig .garage-depth{object-fit:cover}
+body:not(.animated) .garage-column,body:not(.animated) .garage-floor-word,body:not(.animated) .garage-way-out,body:not(.animated) .garage-detail{display:none}
+body:not(.animated) .garage-depth{content:url(assets/parking-redirection/whole.webp?v=923201d7561d)}
+body:not(.animated) .garage-editorial,body:not(.animated) .garage-reflection,body:not(.animated) .garage-reading,body:not(.animated) .garage-action-reading{position:relative;visibility:visible;inset:auto;width:auto;max-width:760px;transform:none!important;opacity:1!important;margin:0;padding:30px 7vw;background:none;color:#23332b}
+body:not(.animated) .garage-editorial{padding-top:50px;padding-bottom:0}
+body:not(.animated) .garage-editorial h1{position:relative;inset:auto;font-size:24vw}
+body:not(.animated) .garage-reading{padding:35px 0 0}
+body:not(.animated) .garage-points{display:none}
+body:not(.animated) .garage-reflection{font-size:34px}
+
+/* Tightly cropped alpha sprites avoid allocating four full-screen transparent textures. */
+.parking-view .garage-rig img.garage-column{inset:auto;object-fit:fill}
+.parking-view .garage-rig img.garage-near-left{left:0.00000%;top:10.41667%;width:15.85938%;height:56.66667%;}
+.parking-view .garage-rig img.garage-near-right{left:82.96875%;top:10.13889%;width:17.03125%;height:56.66667%;}
+.parking-view .garage-rig img.garage-mid-left{left:25.46875%;top:35.69444%;width:7.85156%;height:24.51389%;}
+.parking-view .garage-rig img.garage-mid-right{left:66.79688%;top:35.97222%;width:6.71875%;height:23.95833%;}
+.garage-near-left{transform-origin:57% 98%}.garage-near-right{transform-origin:47% 99%}.garage-mid-left{transform-origin:58% 99%}.garage-mid-right{transform-origin:48% 100%}
+.garage-action-reading{top:84%;color:#1b251f;font-size:clamp(24px,2.1vw,32px)}
+@media(max-width:700px){.garage-action-reading{top:auto;color:#f1f2e7}}

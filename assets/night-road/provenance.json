@@ -1,0 +1,20 @@
+{
+  "author": "© Steven Pavlov / https://commons.wikimedia.org/wiki/User:Senapa",
+  "title": "Road in the fog",
+  "date": "2013-10-23",
+  "source": "https://commons.wikimedia.org/wiki/File:Road_in_the_fog.jpg",
+  "download": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Road_in_the_fog.jpg",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "changes": "Resize 2448x2448 to2200x2200, WebPquality88; runtime crop, foreground feather mask and depth transform, graphical mist. No generative imagery. Derivative remains CC BY-SA3.0. The link between Modane and this road is artistic montage, not a claim that the locations are adjacent.",
+  "files": {
+    "road.webp": {
+      "bytes": 256454,
+      "sha256": "d45f4284274d13da62a3d890475437943cabe8596c4f6d3785a036eb0b26d739"
+    },
+    "road-original.jpg": {
+      "bytes": 882884,
+      "sha256": "f5e27fb3665727ab6572179fea616ff5eb19d78201d50894665d46b75d3be341"
+    }
+  }
+}
