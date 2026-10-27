@@ -30,7 +30,7 @@ body:not(.animated) .parking-view{position:relative;inset:auto;height:65svh;min-
 body:not(.animated) .garage-rig{width:100%;left:0;transform:none!important}
 body:not(.animated) .garage-rig .garage-depth{object-fit:cover}
 body:not(.animated) .garage-column,body:not(.animated) .garage-floor-word,body:not(.animated) .garage-way-out,body:not(.animated) .garage-detail{display:none}
-body:not(.animated) .garage-depth{content:url(assets/parking-redirection/whole.webp?v=923201d7561d)}
+body:not(.animated) .garage-depth{content:url(assets/parking-redirection/whole.webp?v=f97dd58a6997)}
 body:not(.animated) .garage-editorial,body:not(.animated) .garage-reflection,body:not(.animated) .garage-reading,body:not(.animated) .garage-action-reading{position:relative;visibility:visible;inset:auto;width:auto;max-width:760px;transform:none!important;opacity:1!important;margin:0;padding:30px 7vw;background:none;color:#23332b}
 body:not(.animated) .garage-editorial{padding-top:50px;padding-bottom:0}
 body:not(.animated) .garage-editorial h1{position:relative;inset:auto;font-size:24vw}

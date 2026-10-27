@@ -5,9 +5,9 @@
 .route-fold{position:absolute;left:10%;top:17%;width:80%;height:66%;perspective:1800px;perspective-origin:80% 50%}
 .route-leaf{position:absolute;top:0;width:25.05%;height:100%;transform-style:preserve-3d;transform-origin:right center}
 .route-leaf:nth-child(1){left:0}.route-leaf:nth-child(2){left:25%}.route-leaf:nth-child(3){left:50%}.route-leaf:nth-child(4){left:75%}
-.leaf-front,.leaf-back{position:absolute;inset:0;backface-visibility:hidden;background-image:url(assets/real-spaces/berlin.webp?v=923201d7561d);background-size:400% auto;background-position:0 50%}
+.leaf-front,.leaf-back{position:absolute;inset:0;backface-visibility:hidden;background-image:url(assets/real-spaces/berlin.webp?v=f97dd58a6997);background-size:400% auto;background-position:0 50%}
 .route-leaf:nth-child(2) .leaf-front{background-position:33.333% 50%}.route-leaf:nth-child(3) .leaf-front{background-position:66.666% 50%}.route-leaf:nth-child(4) .leaf-front{background-position:100% 50%}
-.leaf-back{transform:rotateY(180deg);background-image:url(assets/parking-redirection/whole.webp?v=923201d7561d);background-size:auto 100%;background-position:right center;background-color:#26302a}
+.leaf-back{transform:rotateY(180deg);background-image:url(assets/parking-redirection/whole.webp?v=f97dd58a6997);background-size:auto 100%;background-position:right center;background-color:#26302a}
 .route-verb{position:absolute;left:6%;top:3%;font-size:clamp(50px,8vw,128px);line-height:.9;letter-spacing:-.075em;font-weight:600}.route-verb span{display:block;margin-left:28vw}
 .route-reading{position:absolute;left:6%;bottom:5%;width:45%;max-width:630px;background:var(--sheet);padding:12px 20px 12px 0;font-size:clamp(18px,1.55vw,23px);line-height:1.35}
 .image-question{position:absolute;left:27%;top:28%;width:46%;max-width:690px}.image-question h2{font-size:clamp(42px,5.1vw,80px);line-height:.95;letter-spacing:-.065em;margin:0 0 35px;font-weight:500}.image-question p{font-size:clamp(19px,1.65vw,25px);line-height:1.4}

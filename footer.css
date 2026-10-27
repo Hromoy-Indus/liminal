@@ -38,6 +38,7 @@ footer.publication-footer#sources {
   border-bottom: 1px solid #373830;
 }
 .publication-footer .footer-project {
+  text-decoration: none;
   display: flex;
   align-items: baseline;
   gap: .32em;

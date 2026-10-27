@@ -1,5 +1,5 @@
 /* The approved scene is untouched; these surfaces exist only after its last hold. */
-.exit-wall{position:absolute;left:500px;top:250px;width:1100px;height:500px;transform:translateZ(-1100px);transform-style:preserve-3d;background:#bfb571 url(assets/wall-main.png?v=923201d7561d) 0 0/1100px 500px;visibility:hidden;backface-visibility:hidden}
+.exit-wall{position:absolute;left:500px;top:250px;width:1100px;height:500px;transform:translateZ(-1100px);transform-style:preserve-3d;background:#bfb571 url(assets/wall-main.png?v=f97dd58a6997) 0 0/1100px 500px;visibility:hidden;backface-visibility:hidden}
 .tape-outline{position:absolute;left:460px;top:134px;width:190px;height:350px;transform:translateZ(.4px)}
 .tape{position:absolute;display:block;background:#24589f;box-shadow:inset 2px 0 #5081b366,inset -2px 0 #173e7766;clip-path:polygon(2% 0,95% 1%,100% 98%,4% 100%,0 56%)}
 .tape-left,.tape-right{width:13px;height:100%;top:0}.tape-left{left:0;transform:rotate(.5deg)}.tape-right{right:0;transform:rotate(-.4deg)}.tape-top,.tape-bottom{left:-3px;width:calc(100% + 8px);height:13px}.tape-top{top:-3px;transform:rotate(-1deg)}.tape-bottom{bottom:0;transform:rotate(.6deg)}

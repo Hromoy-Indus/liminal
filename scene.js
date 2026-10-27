@@ -74,7 +74,7 @@ mm.add({mobile:'(max-width:700px)',desktop:'(min-width:701px)',reduce:'(prefers-
 
  tl.addLabel('material',9)
  .set('.room-material',{visibility:'visible'},9)
- .set('.level .checker',{overflow:'hidden',backgroundImage:'url(assets/checker.png?v=923201d7561d)'},9)
+ .set('.level .checker',{overflow:'hidden',backgroundImage:'url(assets/checker.png?v=f97dd58a6997)'},9)
  .set('.level-left,.level-floor,.level-return,.level-slice',{filter:'none'},9)
  .set('.board,.chip,.ribbon,.cpu',{display:'none'},9)
  .to('.passage-copy',{y:()=>-height()*1.25,duration:.7,ease:'power1.inOut'},9)

@@ -1,18 +1,18 @@
 /* Continuation only. The approved terminal/device/game choreography is unchanged. */
 .room-material{visibility:hidden;position:absolute;inset:0;transform:translateY(100%);pointer-events:none;will-change:transform}
 /* Light, grain and skirting are baked once. No live gradient/filter paint pass. */
-.wall-material{background:url(assets/wall-main.png?v=923201d7561d) 0 0/100% 100% no-repeat}
-.level-left .wall-material,.level-return .wall-material,.level-slice .wall-material{background-image:url(assets/wall-side.png?v=923201d7561d)}
-.floor-material{background:url(assets/floor-lit.png?v=923201d7561d) 0 0/100% 100% no-repeat}
+.wall-material{background:url(assets/wall-main.png?v=f97dd58a6997) 0 0/100% 100% no-repeat}
+.level-left .wall-material,.level-return .wall-material,.level-slice .wall-material{background-image:url(assets/wall-side.png?v=f97dd58a6997)}
+.floor-material{background:url(assets/floor-lit.png?v=f97dd58a6997) 0 0/100% 100% no-repeat}
 .new-architecture{visibility:hidden;position:absolute;transform-style:preserve-3d;pointer-events:none}
 .ceiling-plane{left:-900px;top:250px;width:3200px;height:2300px;transform-origin:50% 0;transform:rotateX(-86deg) translateZ(-80px)}
-.ceiling-face{position:absolute;left:0;right:0;top:-400px;bottom:0;background:url(assets/ceiling.png?v=923201d7561d) 0 0/640px 640px;border:3px solid #777765}
+.ceiling-face{position:absolute;left:0;right:0;top:-400px;bottom:0;background:url(assets/ceiling.png?v=f97dd58a6997) 0 0/640px 640px;border:3px solid #777765}
 .repeat-space{inset:0}
 .echo-room{position:absolute;left:520px;top:250px;width:850px;height:500px;transform-style:preserve-3d;transform-origin:50% 50%;will-change:transform}
 .echo-one{transform:translateZ(-370px)}.echo-two{transform:translateZ(-740px)}.echo-three{transform:translateZ(-1110px)}.echo-four{transform:translateZ(-1480px)}
-.echo-frame{position:absolute;inset:0;background:url(assets/wall-depth-one.png?v=923201d7561d) 0 0/100% 100% no-repeat;clip-path:polygon(0 0,100% 0,100% 100%,83% 100%,83% 25%,47% 25%,47% 100%,0 100%)}
-.echo-two .echo-frame{background-image:url(assets/wall-depth-two.png?v=923201d7561d)}.echo-three .echo-frame{background-image:url(assets/wall-depth-three.png?v=923201d7561d)}.echo-four .echo-frame{background-image:url(assets/wall-depth-four.png?v=923201d7561d)}
-.echo-side{position:absolute;inset:0;background:url(assets/wall-side.png?v=923201d7561d) 0 0/100% 100% no-repeat;transform:rotateY(90deg);transform-origin:0 50%}
+.echo-frame{position:absolute;inset:0;background:url(assets/wall-depth-one.png?v=f97dd58a6997) 0 0/100% 100% no-repeat;clip-path:polygon(0 0,100% 0,100% 100%,83% 100%,83% 25%,47% 25%,47% 100%,0 100%)}
+.echo-two .echo-frame{background-image:url(assets/wall-depth-two.png?v=f97dd58a6997)}.echo-three .echo-frame{background-image:url(assets/wall-depth-three.png?v=f97dd58a6997)}.echo-four .echo-frame{background-image:url(assets/wall-depth-four.png?v=f97dd58a6997)}
+.echo-side{position:absolute;inset:0;background:url(assets/wall-side.png?v=f97dd58a6997) 0 0/100% 100% no-repeat;transform:rotateY(90deg);transform-origin:0 50%}
 .far-surface{position:absolute;left:500px;top:250px;width:1100px;height:500px;transform:translateZ(-1920px);background:#615536}
 .far-opening{position:absolute;left:62%;top:25%;bottom:0;width:17%;background:#24241b;border-left:5px solid #84754a}
 .route-word{position:absolute;left:8%;top:12%;font-size:74px;line-height:1;letter-spacing:-.065em;color:#efe7b7;visibility:hidden;transform:translateZ(3px)}
@@ -28,7 +28,7 @@
 .static-continuation{display:none}
 body:not(.animated) .room-reading,body:not(.animated) .ending-phrase{position:relative;transform:none!important;visibility:visible!important;left:auto;top:auto;bottom:auto;width:100%;max-width:none;height:auto;padding:45px 7vw;clip-path:none;display:block;font-size:21px}
 body:not(.animated) .repetition-reading p{font-size:26px;margin:0 0 1em}
-body:not(.animated) .static-continuation{display:block;min-height:260px;background:url(assets/wall-main.png?v=923201d7561d) center/cover}
+body:not(.animated) .static-continuation{display:block;min-height:260px;background:url(assets/wall-main.png?v=f97dd58a6997) center/cover}
 @media(max-width:700px){
  .room-reading{font-size:20px;line-height:1.4}
  .backrooms-reading{top:0;left:0;max-width:none;width:100%;height:auto;padding:34px 7vw 38px;clip-path:polygon(0 0,100% 0,100% 96%,91% 96%,91% 100%,0 100%)}
@@ -39,10 +39,10 @@ body:not(.animated) .static-continuation{display:block;min-height:260px;backgrou
 
 /* Full room envelope, enabled by the existing material transition at time 9 only. */
 .backrooms-floor{left:-900px;top:750px;width:3200px;height:2500px;transform-origin:50% 0;transform:rotateX(90deg) translateY(-2100px)}
-.backrooms-floor-face{position:absolute;inset:0;background:url(assets/floor-lit.png?v=923201d7561d) 0 0/100% 100% no-repeat}
+.backrooms-floor-face{position:absolute;inset:0;background:url(assets/floor-lit.png?v=f97dd58a6997) 0 0/100% 100% no-repeat}
 
 .room-envelope{inset:0}
-.envelope-back-wall,.envelope-side-wall{position:absolute;top:250px;height:500px;background:url(assets/wall-side.png?v=923201d7561d) 0 0/850px 500px repeat-x}
+.envelope-back-wall,.envelope-side-wall{position:absolute;top:250px;height:500px;background:url(assets/wall-side.png?v=f97dd58a6997) 0 0/850px 500px repeat-x}
 .envelope-back-wall{left:-900px;width:3200px;transform:translateZ(-2100px)}
 .envelope-side-wall{width:2500px;transform-origin:0 50%;transform:rotateY(90deg) translateX(-400px)}
 .envelope-left{left:-900px}.envelope-right{left:2300px}
